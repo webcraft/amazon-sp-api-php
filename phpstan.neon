@@ -1,0 +1,13 @@
+parameters:
+    level: 0
+    paths:
+        - lib
+
+    reportUnmatchedIgnoredErrors: false
+    ignoreErrors:
+
+        # Relic of PHP versions prior to v7.3.0
+        # https://www.php.net/manual/en/function.ftp-put.php#refsect1-function.ftp-put-changelog
+        - '#^Function ftp_put invoked with 3 parameters, 4\-5 required\.$#'
+
+    checkGenericClassInNonGenericObjectType: false
